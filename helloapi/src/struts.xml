@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+	<struts>
+	<package name="hellopack" extends="struts-default">
+	<action name="hello" class="com.ve.struts.HelloAction">
+	<result name="wish">/wish.jsp</result>
+	
+	</action>
+	
+	</package>
+	
+	</struts>
