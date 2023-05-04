@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+<struts>
+<package name="registerpack" extends="struts-default">
+<action name="studenthome" class="com.ve.struts.models.StudentHome">
+<result name="success">/studenthome.jsp</result>
+<result name="failure">/index.jsp</result>
+</action>
+<action name="addstudent" class="com.ve.struts.models.AddStudent">
+<result name="success">/addstudentpage.jsp</result>
+</action>
+<action name="addstudentaction" class="com.ve.struts.models.AddStudentAction">
+<result name="success">/studenthome.jsp</result>
+<result name="failure">/addstudentpage.jsp</result>
+</action>
+<action name="update" class="com.ve.struts.models.StudentUpdate">
+<result name="success">/updatestudent.jsp</result>
+<result name="failure">/index.jsp</result>
+</action>
+<action name="updateprocess" class="com.ve.struts.models.UpdateProcess">
+<result name="success">/studenthome.jsp</result>
+<result name="failure">/index.jsp</result>
+</action>
+<action name="delete" class="com.ve.struts.models.DeleteStudent">
+<result name="success">/studenthome.jsp</result>
+<result name="failure">/index.jsp</result>
+</action>
+<action name="home" class="com.ve.struts.models.Home">
+<result name="success">/studenthome.jsp</result>
+
+</action>
+</package>
+</struts>
